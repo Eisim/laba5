@@ -171,6 +171,7 @@ System::Void MainWindow::reset() {
 
 System::Void MainWindow::addExpression() {
 	std::string tmp = commasToPoints(toString(this->textBox1->Text));
+
 	try {
 		this->exAvlTree->addExp(tmp);
 		this->exRbTree->addExp(tmp);
